@@ -5,3 +5,37 @@
 5.git remote -v
 6.git commit -m "First commit"
 7.git push origin master
+8.git diff
+9.git mv oldfilename newfilename
+10.git log
+11.git status
+12.git rm filename
+13.git gc (removevs unnecessary files)
+14.git commit 
+git commit dir-path/filename
+git commit -m "Message goes here." filename
+15.git config --global user.name "John Doe"
+git config --global user.email jdoe@megacorp.com
+git config -l
+
+git config --global --unset user.password	This configures ~/.gitconfig
+ 
+Show your local GIT configuration for your local repo
+
+Clear cached password. Will be prompted on next push/pull.
+[Potential Pitfall]: Error: fatal: Authentication failed for 'http://git.megacorp.com/git/repo/projectx.git/’
+Fix: "git config --global --unset user.password" to clear passord cache.
+16.git ls-files --stage 
+git ls-files --cached 
+git ls-files --modified 
+git ls-files --others 
+git ls-files --deleted 
+git ls-files --unmerged 
+git ls-files --killed 
+...	List files staged. 
+List cached files. 
+List modified files. 
+List other (un-tracked) files. 
+List deleted files. 
+List un-merged files. 
+List killed files that need to be removed due to file/directory conflicts for checkout-index to succeed.
