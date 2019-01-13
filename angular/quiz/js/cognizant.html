@@ -1,0 +1,1417 @@
+
+
+  
+      
+      
+          <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+
+
+    
+<html>
+  <head>
+    <style>
+        .popup-modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding: 10px;
+            left: 0;
+            top: 0;
+            width: 15%;
+//            height : 13%;
+            background : white;
+            margin-left : 61%;
+            margin-top : 13%;
+            box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        #tokenValue{
+            font-size: 17px;
+            font-style: italic;
+            padding-top : 10px
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"/>
+    <title>Courses / Assessments</title>
+    
+        <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+      
+    <link rel="stylesheet" href="/static/css/themes/bootstrap.cognizant.min.css"></link>
+    <link rel="stylesheet" href="/static/css/helpGifs.css"></link>
+    
+    
+     <span></span>
+    <script type="text/javascript" src="/plugins/amphickeditor-0.1/js/ckeditor/ckeditor.js"></script>
+<!--[if lt IE 9]>
+    <style>
+        .sidePaneLink{
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+        }
+    </style>
+    <![endif]-->    
+    
+  <script language="javascript" type="text/javascript">
+    var amphiThemeName = "cognizant";
+    var grailsUrl = "https://cognizant.e-box.co.in:443";
+    var contextPath = '';
+    var requestProtocol = 'https';
+    if(contextPath == '/')
+      contextPath = '';
+      
+      if(self != top){
+        document.documentElement.style.display = 'none';
+      }
+    
+  </script>
+  
+  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="layout" content="main"/>
+        <script type="text/javascript" src="/static/js/milestone.js"></script>
+        <link rel="stylesheet" href="/static/css/milestone_style.css" type="text/css" />
+        <link rel="stylesheet" href="/static/css/morris.css" type="text/css">
+        <link rel="stylesheet" href="/static/css/coursetabs_new.css" type="text/css">
+          
+          
+    
+  <script src="/static/plugins/jquery-1.10.2/js/jquery/jquery-1.10.2.min.js" type="text/javascript" ></script>
+<link href="/static/bundle-ui_head.css" type="text/css" rel="stylesheet" media="screen, projection" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <span></span>        
+  
+</head>
+<body> 
+    
+  <div id="amphiHeader">       
+      <nav class="navbar navbar-default navbar-static-top amphi-navbar" style="box-shadow:0 0 2px rgba(0, 0, 0, 0.2);margin-bottom: 0px;display:table !important;width: 100%;">
+          <div class="" style="display: table-row !important;">
+              <div class="navbar-header amphi-navbar" style="display: table-cell !important;">
+                  <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>      
+                  
+                      
+                                    
+                  <a class="navbar-brand " href="/course/coursetabs" style="padding:5px;" >
+                    <span style="margin-left:5px;font-size: 1.7em;padding:0px;color:black;" >
+                        
+                            GTP
+                        
+                    </span>
+                  </a>
+              </div>
+              <div class="navbar-collapse collapse" id="amphinavbar" style="display: table-cell !important;vertical-align: middle;">
+                  <ul class="nav navbar-nav domain-nav-bar" style="float: right;margin-right:60px;">
+                        
+                      
+                          
+                        
+                            
+                                
+                                
+                                    <li><a href="/course/coursetabs">
+                                    
+                                        Home
+                                    
+                                    </a></li>
+                                
+                            
+                        
+                            
+                                
+                                    <li><a href="/course/show/1124">Course</a></li>
+                                
+                            
+                              
+
+                                   
+                                <li>
+                                
+    
+
+                       
+                                </li>
+                             
+
+                        
+                        
+                        
+                            <li>
+                                <a href="/notification/showAll?courseId=&uniqueId=&systemGeneratedNotifications=true&offset=0" onclick="jQuery.ajax({type:'POST',data:{'courseId': '','uniqueId': '','systemGeneratedNotifications': 'true','offset': '0'}, url:'/notification/showAll',success:function(data,textStatus){jQuery('#amphiNotificationDiv').html(data);jQuery('#amphiNotificationDialog').modal('show');showDateTimePicker();},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" style="display: inline-block;overflow-x: visible;padding-top:10px;padding-bottom: 10px;padding-left: 15px;position: relative; width:45px" title="Notifications">
+                                    <i class="glyphicon glyphicon-bell"></i>
+                                    
+                                </a>
+                            </li> 
+                        
+                        
+                        
+                        
+                        
+                                              
+                        
+                          
+                        
+                        
+                      <li>
+                          
+                                
+                              <a href="#" class="dropdown-toggle" style="text-decoration:none;min-width:170px;" data-toggle="dropdown">
+                                  <i class="glyphicon glyphicon-user amphi-user-online" id="amphiHeaderUserIcon"></i>&nbsp;Saikumar  Surisetty&nbsp;&nbsp;<b class="caret"></b>
+                              </a>         
+                              <ul class="dropdown-menu">
+                                  
+                                  
+                                    
+                                        
+                                            <li><a href="/user/show/75471">My Profile</a></li>
+                                            <li class="divider"></li>
+                                        
+                                    
+                                    <li class="dropdown-submenu">
+                                        <a href="#" > My Editors</a>         
+                                         <ul class="dropdown-menu  " style="left:-100%; border-radius: 0px; width:100%;">
+                                            
+                                         </ul>
+                                     </li>
+                                    <li class="divider"></li>
+                                    
+                                        <li>
+                                            <a href="javascript:void(0)" onclick="getSSOKey(this)">SSO Plugin Key</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                    
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                    
+                                        
+                                    
+                                    
+                                     
+                                        
+                                            <li class="dropdown-submenu">
+                                               <a href="#" > Themes</a>         
+                                                <ul class="dropdown-menu  " style="left:-100%; border-radius: 0px; width:100%;">
+                                                   
+                                                        <li><a onclick='changeTheme("6")' href="#"  >default</a></li>
+                                                   
+                                                        <li><a onclick='changeTheme("15")' href="#" style=font-weight:bold; >cognizant</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                            <li class="divider"></li>
+                                       
+                                    
+                                     
+                                     
+                                        
+                                          <li class="dropdown-submenu">
+                                              <a href="#" >Plugins</a>         
+                                              <ul class="dropdown-menu " style="left:-100%; border-radius: 0px;width:100%;">
+                                                  <li><a href="/uploads/plugins/EboxPlugin_1.16.zip">Eclipse</a></li>
+                                                  <li><a href="/uploads/plugins/E-Box_VS_2010_plugin_1.8.5.vsix">Visual Studio 2010</a></li>
+                                                  <li><a href="/uploads/plugins/EBox_VisualStudio2012_1.11.1.zip">Visual Studio 2012</a></li>
+                                              </ul>
+                                          </li>
+                                          <li class="divider"></li>  
+                                        
+                                    
+                                        
+                                    
+                                        
+                                    
+                                    
+                                        
+                                          <li><a href="/ticket/myTicket/75471">Help Desk</a></li>
+                                          <li class="divider"></li>
+                                        
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    
+                                    
+    
+                                                                        
+                                    
+                                    
+                                    
+                                        <li><a href="/user/logout?insId=">Logout</a></li>
+                                    
+                              </ul>
+                          
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  
+  </div>  
+    <div class="popup-modal">  
+        <div id="sso_token_menu" style="left:-100%; border-radius: 0px; width:100%;">
+            <div>
+                <div id="tokenHeading">
+                    <b class="col-md-8 col-lg-8" style="padding: 0px;">Token</b>
+                    <div class="col-md-2 col-lg-2 pull-right" style="padding: 0px;" >
+                        <a href="javascript:void(0)" title="Close" onclick="jQuery('.popup-modal').hide()"><i class="fa fa-close"></i></a>
+                    </div>
+                </div>                
+                <div style="clear: both"></div>
+                <div id="tokenValue"></div>              
+            </div>
+        </div>
+    </div>
+        
+   
+  
+  
+  <div id="content" class="ebox-content-div row" style="margin: 0px;">
+     
+      
+            
+        
+    
+        
+            
+            
+              
+               
+        
+      
+    
+    
+    
+     
+        <script type="text/javascript">
+            $("#courseTabsDashboard").html("Please wait....");
+        </script>
+        
+                
+    
+        
+        <div class="body" id="coursetabsbody">
+                
+            
+                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                <table class="table">
+                    <tr class="prop">
+                        <td>
+                            
+
+
+
+
+
+                            <br />
+                            
+<style>
+    .coursetab_cg .form-control{
+    width: 166px;
+    height: 26px;
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    color: #737373;
+    }
+    .coursetab_cg .glyphicon{
+    position: absolute;
+    right: 135px;
+    top: 6px;
+    color: #a7a7a7;
+    font-size: 13px;
+    }
+    .course-list-search{
+    width: 160px;
+    float: right;
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    }
+    .course-list-search .course-search{
+     outline: 0;
+     border-bottom: 2px solid #bfbfbf;
+     border-radius: 18px;
+     letter-spacing: 0.8px;
+     -webkit-appearance: none;
+     padding-left: 35px;
+    }
+</style>
+
+
+        
+        
+        <div class="coursetab_cg" style="margin:5px;font-size: 1.7em;padding:0px;"><b>My Skills</b>
+            <div class="course-list-search" style="display:none;">
+                <input id="filterCourse" type="text" class="form-control course-search" placeholder="Search course" oninput="filterByCourse();">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
+            </div>
+        </div>
+        <div class="tabs">                                
+            
+            <ul class="tab-links" style="padding-left: 0px;">                                 
+                    <li><a href="#pastTab">Completed</a></li>
+                    <li class="active"><a href="#presentTab">In Progress</a></li>
+                    <li><a href="#futureTab">Upcoming</a></li>                                    
+            </ul>
+            
+            
+            <div class="tab-content">
+                
+                <div id="pastTab" class="tab">
+                    
+
+<div class="row"></div> 
+
+
+                </div>
+                
+                <div id="presentTab" class="tab active">
+                    
+
+<div class="row"></div> 
+ 
+<div class="row course curvedEdge-S panel-primary course-box" style="border-radius: 0px;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100px" style="padding:5px;">
+                
+                    <a href='/course/show/1294'  >
+                        <img src="/course/showLogo/1294" alt="Course Logo" style="border:1px solid #838AA2" class="img-circle " height="80" width="80"/>
+                    </a>
+                
+            </td>
+            <td style="font-size: 19px;font-weight: bold;padding-left: 20px;">
+                Computational Thinking Course
+            </td>
+            <td width="150px">
+                
+                    <a href='/course/show/1294' class="btn btn-primary" style="margin:5px;" >Start Learning </a>
+                
+            </td>
+        </tr>
+    </table>
+
+    </div>
+ 
+<div class="row course curvedEdge-S panel-primary course-box" style="border-radius: 0px;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100px" style="padding:5px;">
+                
+                    <a href='/course/show/1239'  >
+                        <img src="/course/showLogo/1239" alt="Course Logo" style="border:1px solid #838AA2" class="img-circle " height="80" width="80"/>
+                    </a>
+                
+            </td>
+            <td style="font-size: 19px;font-weight: bold;padding-left: 20px;">
+                2017 - PARC Programming Fundamentals using Java Assessment / Mock
+            </td>
+            <td width="150px">
+                
+                    <a href='/course/show/1239' class="btn btn-primary" style="margin:5px;" >Start Learning </a>
+                
+            </td>
+        </tr>
+    </table>
+
+    </div>
+ 
+<div class="row course curvedEdge-S panel-primary course-box" style="border-radius: 0px;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100px" style="padding:5px;">
+                
+                    <a href='/course/show/1187'  >
+                        <img src="/course/showLogo/1187" alt="Course Logo" style="border:1px solid #838AA2" class="img-circle " height="80" width="80"/>
+                    </a>
+                
+            </td>
+            <td style="font-size: 19px;font-weight: bold;padding-left: 20px;">
+                PARC Behavioural Course
+            </td>
+            <td width="150px">
+                
+                    <a href='/course/show/1187' class="btn btn-primary" style="margin:5px;" >Start Learning </a>
+                
+            </td>
+        </tr>
+    </table>
+
+    </div>
+ 
+<div class="row course curvedEdge-S panel-primary course-box" style="border-radius: 0px;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100px" style="padding:5px;">
+                
+                    <a href='/course/show/1281'  >
+                        <img src="/course/showLogo/1281" alt="Course Logo" style="border:1px solid #838AA2" class="img-circle " height="80" width="80"/>
+                    </a>
+                
+            </td>
+            <td style="font-size: 19px;font-weight: bold;padding-left: 20px;">
+                SQL Mock Assessment Course I
+            </td>
+            <td width="150px">
+                
+                    <a href='/course/show/1281' class="btn btn-primary" style="margin:5px;" >Start Learning </a>
+                
+            </td>
+        </tr>
+    </table>
+
+    </div>
+ 
+<div class="row course curvedEdge-S panel-primary course-box" style="border-radius: 0px;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100px" style="padding:5px;">
+                
+                    <a href='/course/show/1142'  >
+                        <img src="/course/showLogo/1142" alt="Course Logo" style="border:1px solid #838AA2" class="img-circle " height="80" width="80"/>
+                    </a>
+                
+            </td>
+            <td style="font-size: 19px;font-weight: bold;padding-left: 20px;">
+                PARC II / SQL Virtual Training Hands-On Course
+            </td>
+            <td width="150px">
+                
+                    <a href='/course/show/1142' class="btn btn-primary" style="margin:5px;" >Start Learning </a>
+                
+            </td>
+        </tr>
+    </table>
+
+    </div>
+ 
+<div class="row course curvedEdge-S panel-primary course-box" style="border-radius: 0px;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100px" style="padding:5px;">
+                
+                    <a href='/course/show/1241'  >
+                        <img src="/course/showLogo/1241" alt="Course Logo" style="border:1px solid #838AA2" class="img-circle " height="80" width="80"/>
+                    </a>
+                
+            </td>
+            <td style="font-size: 19px;font-weight: bold;padding-left: 20px;">
+                GTP - Core Java Mock Assessment
+            </td>
+            <td width="150px">
+                
+                    <a href='/course/show/1241' class="btn btn-primary" style="margin:5px;" >Start Learning </a>
+                
+            </td>
+        </tr>
+    </table>
+
+    </div>
+ 
+<div class="row course curvedEdge-S panel-primary course-box" style="border-radius: 0px;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100px" style="padding:5px;">
+                
+                    <a href='/course/show/1124'  >
+                        <img src="/course/showLogo/1124" alt="Course Logo" style="border:1px solid #838AA2" class="img-circle " height="80" width="80"/>
+                    </a>
+                
+            </td>
+            <td style="font-size: 19px;font-weight: bold;padding-left: 20px;">
+                PARC II - Java Programming
+            </td>
+            <td width="150px">
+                
+                    <a href='/course/show/1124' class="btn btn-primary" style="margin:5px;" >Start Learning </a>
+                
+            </td>
+        </tr>
+    </table>
+
+    </div>
+
+
+                </div>
+                
+                <div id="futureTab" class="tab">
+                    
+
+<div class="row"></div> 
+
+
+                </div>
+                
+            </div>
+        
+    
+    
+
+</div>
+
+<div class="modal fade" id="myModalWindow">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" >Course Calendar</h4>
+            </div>
+            <div class="modal-body" id="myModalBody">
+            </div>
+            <div class="modal-footer ">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.tabs .tab-links a').on('click', function(e)  {    
+        document.getElementById("filterCourse").value = "";        
+        $($('.tab-links').find('li.active').find('a').attr('href')).find($('.panel-primary')).css('display','block');                
+    });
+    function filterByCourse(){    
+    var courseState = $('.tab-links').find('li.active').find('a').attr('href')
+    var filterValue = document.getElementById("filterCourse");
+    var re = new RegExp(filterValue.value, 'i');        
+    var courseId = $('.panel-primary');
+    $(courseState).find(courseId).each( function() {
+        if($(this).find('table tr td:nth-child(2)').text().match(re))
+        {
+            $(this).css('display','block');
+        }
+        else{
+        $(this).css('display','none');
+        }
+    });
+}
+</script>
+
+                        </td>
+                        
+                            <td style="width:25%">
+                                
+                                    
+
+
+    <div>
+    
+        <div style="background:#E0F3FB;padding: 8px 8px 9px 8px">
+    
+        <div style="position: relative">
+        <center>
+            <div><strong>Learning Pulse</strong></div>
+        <div style="background-size:100px 100px;background-image:url('/static/images/virtualTheme/learningCurve/green-pluse.gif');background-position: center;	background-repeat: no-repeat;display:inline-block;">
+        <div id="amphiVT11" data-dimension="140" data-text="72.3" data-info="" data-width="10" data-fontsize="28" data-percent="72.3" data-fgcolor="#6DB33F" data-bgcolor="#40B8E1" data-fill="rgba(0,0,0,0)"></div>
+        </div>
+        </center>
+        </div>
+        <script>
+        jQuery( document ).ready(function() {
+                jQuery('#amphiVT11').circliful();
+                setInterval(blinkText,900,'amphiVT11');
+        });
+        function blinkText(vid){
+            jQuery('#'+vid+' .circle-text').animate({"font-size":"24px"},350);
+            jQuery('#'+vid+' .circle-text').animate({"font-size":"28px"},350);
+        }
+        </script>
+    
+</div>
+
+    
+</div>        
+
+
+    <script>jQuery(document).ready(function(){ jQuery.ajax({ url: 'http://cognizant.e-box.co.in/feedback/externalFeedbackAttempt', type: "GET", success: function(data) { jQuery("#feedbackdiv").html(data); } }); });</script> <div id="feedbackdiv"></div><br /><div style="margin-top:0px;background:#E9F2F7;padding:10px"> <div style="text-align:center;margin-right:40px;margin-top:-5px;font-size: 2em;">Are You <br />Business <br />Ready ? <br /> <input type="button" onclick1="jQuery('#areucognizantreadyInstructions').modal('show');" value="Guidelines" class="btn btn-success" style="width:100px" /> <!--<a href="javascript:void(0)" onclick="checkFinalAssessment(3182)" class="btn btn-success" style="width:100px" >Get Certified</a><input type="button" value="Enrollment" onclick="slotBooking()" style="width:100px" class="btn btn-primary" />--></div> </div> <br />
+
+                                    <br />
+                                
+                                
+                                
+                                    <br /> <div style="margin-top:-35px;background:#E9F2F7;padding:10px"> <div style="text-align:center;margin-right:40px;margin-top:-5px;font-size: 1.7em;cursor:pointer;font-weight:bold;color: #006D7B;" onclick1="jQuery('#amphicallender').modal('show');" onclick="showWait();jQuery.ajax({url:contextPath+'/roadMap/userRoadMapCalender',success:function(data){hideWait();jQuery('#userRoadMapCalendar').html(data);jQuery('#userRoadMapCalendarModal').modal('show');},error:errorCall});">My Calendar </div> </div><br> <div style="display: none;" aria-hidden="false" tabindex="-1" id="amphicallender" class="modal"> <div style="min-width: 800px;" class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <button aria-hidden="true" data-dismiss="modal" class="close" type="button"> ×</button> <div style="text-align:center; font-size:20px;font-weight:bold">July 2015</div></div> <div style="overflow:auto" class="modal-body"> <table class="table table-striped"> <tr><th>Week</th><th>Date</th><th>Day</th><th>Time</th><th>Assessment Type</th><th>Theme</th><th>Duration</th></tr> <tr><td>3</td><td>16th July</td><td>Thursday</td><td>5pm-5:30pm</td><td>Code Challenge</td><td>Arrays</td><td>30 mins</td></tr> <tr style="font-weight:bold"><td>3</td><td>17th July</td><td>Friday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>3</td><td>17th July</td><td>Friday</td><td>4pm:5:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr><td>3</td><td>18th July</td><td>Saturday</td><td>11am-11:30am</td><td>Code Challenge</td><td>Strings</td><td>30 mins</td></tr> <tr><td>4</td><td>21st July</td><td>Tuesday</td><td>3pm-3:30pm</td><td>Code Challenge</td><td>Problem Solving I</td><td>30 mins</td></tr> <tr><td>4</td><td>22nd July</td><td>Wednesday</td><td>5pm-5:30pm</td><td>Code Challenge</td><td>Problem Solving II</td><td>30 mins</td></tr> <tr style="font-weight:bold"><td>4</td><td>23rd July</td><td>Thursday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>4</td><td>23rd July</td><td>Thursday</td><td>4pm:5:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr><td>4</td><td>24th July</td><td>Friday</td><td>11am-11:30am</td><td>Code Challenge</td><td>Basic Select Queries</td><td>30 mins</td></tr> <tr style="font-weight:bold"><td>4</td><td>25th July</td><td>Saturday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>5</td><td>28th July</td><td>Tuesday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>5</td><td>28th July</td><td>Tuesday</td><td>4pm:5:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr><td>5</td><td>29th July</td><td>Wednesday</td><td>3pm-3:30pm</td><td>Code Challenge</td><td>Aggregate Functions</td><td>30 mins</td></tr> <tr style="font-weight:bold"><td>5</td><td>30th July</td><td>Thursday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>5</td><td>30th July</td><td>Thursday</td><td>4pm:5:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr><td>5</td><td>31st July</td><td>Friday</td><td>5pm-5:30pm</td><td>Code Challenge</td><td>Joins</td><td>30 mins</td></tr> <tr><th colspan="7" style="text-align:center; font-size:20px;font-weight:bold">August 2015</th></tr> <tr><td>1</td><td>1st August</td><td>Saturday</td><td>11am-11:30am</td><td>Code Challenge</td><td>Control Structures</td><td>30 mins</td></tr> <tr><td>2</td><td>4th August</td><td>Tuesday</td><td>3pm-3:30pm</td><td>Code Challenge</td><td>Looping Constructs</td><td>30 mins</td></tr> <tr style="font-weight:bold"><td>2</td><td>5th August</td><td>Wednesday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>2</td><td>5th August</td><td>Wednesday</td><td>4pm-5:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr><td>2</td><td>6th August</td><td>Thursday</td><td>5pm-5:30pm</td><td>Code Challenge</td><td>Problem Solving I</td><td>30 mins</td></tr> <tr style="font-weight:bold"><td>2</td><td>7th August</td><td>Friday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>2</td><td>7th August</td><td>Friday</td><td>4pm-5:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr><td>2</td><td>8th August</td><td>Saturday</td><td>11am-11:30am</td><td>Code Challenge</td><td>Problem Solving II</td><td>30 mins</td></tr> <tr><td>3</td><td>11th August</td><td>Tuesday</td><td>3pm-3:30pm</td><td>Code Challenge</td><td>Basic Select Queries</td><td>30 mins</td></tr> <tr><td>3</td><td>12th August</td><td>Wednesday</td><td>5pm-5:30pm</td><td>Code Challenge</td><td>Aggregate Functions</td><td>30 mins</td></tr> <tr style="font-weight:bold"><td>3</td><td>13th August</td><td>Thursday</td><td>11am-12:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr style="font-weight:bold"><td>3</td><td>13th August</td><td>Thursday</td><td>4pm-5:30pm</td><td>Get Certified</td><td></td><td>90 mins</td></tr> <tr><td>3</td><td>14th August</td><td>Friday</td><td>11am-11:30am</td><td>Code Challenge</td><td>Joins</td><td>30 mins</td></tr> </table></div> </div> </div> </div><div style="background: linear-gradient(to top,#D4ECF7,#EAF3F7);padding:14px;border-radius:5px;"> <div style="text-align:center;margin:5px;"> <img src="../images/help.png" width="180px;" height="120px"> </img> </div> <h3 style="font-size:17px"><strong>How can you get started?</strong></h3> <ol> <li>Learn more about CATP <a href="javascript:void(0)" href1="http://test.cognizant.e-box.co.in/uploads/Early%20Engagement%20Brochure_v1.00a.pdf" target="_blank" >here</a></li> <li>Click <a href="javascript:void(0)" onclick="jQuery('#programmingdemodialog').modal('show');">here</a> to watch a demo</li> <li>Click on Start Learning against your first course and get started!</li> <!--<li>Click <a href="javascript:void(0)" onclick1="jQuery('#navDialog').modal('show');">here</a> to watch the basic navigation demo</li> <li>Click <a href="javascript:void(0)" onclick1="jQuery('#programmingdemodialog').modal('show');">here</a> to watch the programming demo</li> <li>Click <a href="javascript:void(0)" onclick1="jQuery('#quizdemodialog').modal('show');">here</a> to watch the quiz demo</li> <li>Click <a href="javascript:void(0)" onclick1="jQuery('#dbmsdemodialog').modal('show');">here</a> to watch the dbms demo</li> --> </ol> <h3 style="font-size:17px"><strong>Have any questions while you are learning?</strong></h3> <ol> <li>Use the Q&A forum shown in your learning window</li> <li>Check out the answers as they get posted <a href1="javascript:void(0)" href="/amphiComment/forum" target="_blank">here</a></li><li><a href="javascript:void(0)" onclick="jQuery('#videoDialog1').modal('show');">How to correct Wrong Answer?</a></li> </ol> <h3 style="font-size:17px"><strong>Facing any issues with CATP?</strong></h3> <ol> <li>First, check out the FAQ section <a href="https://campus2cognizant.cognizant.com/Pages/Prelogin" target="_blank">here</a></li> <li>Raise a Help Desk ticket <a href1="javascript:void(0)" href="/ticket/myTicket" target="_blank">here</a> and our team will assist you!</li> </ol> <!--<h3 style="font-size:17px"><strong>Below are the basic system requirements for CATP</strong></h3> <ol> <li>Best viewed in Firefox 20.0+, Chrome 30.0+ and Internet Explorer 10.0+ </li> <li>Broadband Connection</li> <li>Flash player for video playback</li> </ol>--><div class="modal " id="videoDialog" tabindex="-1" aria-hidden="false" style="display: none;"> <div class="modal-dialog" style="min-width: 800px;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> ×</button> </div> <div class="modal-body" style="overflow:auto"> <embed src="../../player/flowplayer-3.0.3.swf" wmode="transparent" width="700" height="450" allowfullscreen="true" allowscriptaccess="always" quality="high" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" id="player_api" bgcolor="#000000" name="player_api" flashvars="config={'playerId':'player','clip':{'url':'https://cognizant.e-box.co.in/uploads/Resource/eugenics/contestNew.flv'},'playlist':[{'url':'https://cognizant.e-box.co.in/uploads/Resource/eugenics/contestNew.flv'}]}"/> </div> <div class="modal-footer "> <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button> </div> </div> </div></div> <div class="modal " id="videoDialog1" tabindex="-1" aria-hidden="false" style="display: none;"> <div class="modal-dialog" style="min-width: 800px;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> ×</button> </div> <div class="modal-body" style="overflow:auto"> <embed src="../../player/flowplayer-3.0.3.swf" wmode="transparent" width="700" height="450" allowfullscreen="true" allowscriptaccess="always" quality="high" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" id="player_api" bgcolor="#000000" name="player_api" flashvars="config={'playerId':'player1','clip':{'url':'http://cognizant.e-box.co.in/uploads/demo-video-WrongAnswer.flv'},'playlist':[{'url':'http://cognizant.e-box.co.in/uploads/demo-video-WrongAnswer.flv'}]}"/> </div> <div class="modal-footer "> <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button> </div> </div> </div> </div> <div class="modal" id="areucognizantreadyInstructions" tabindex="-1" aria-hidden="false" style="display: none;"> <div class="modal-dialog" style="min-width: 800px;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> ×</button> <div style="text-align:center; font-size:20px;">INSTRUCTIONS FOR “Are You Cognizant Ready”</div></div> <div class="modal-body" style="overflow:auto"> <style type="text/css"> P { margin-bottom: 0.21cm; }</style> <p style="margin-bottom: 0cm"> &#160;</p> <p style="margin-bottom: 0cm"> <span style="color:#ff0000;"><b><span style="background: #ffff00"><span style="background-color:#f0fff0;">IMPORTANT: Read this before proceeding with your &#8220;Are You Cognizant Ready&#8221; attempt! </span></span></b><span style="background: #ffff00"><span style="background-color:#f0fff0;">This </span></span><u><b><span style="background: #ffff00"><span style="background-color:#f0fff0;">IS NOT</span></span></b></u><span style="background: #ffff00"><span style="background-color:#f0fff0;"> like &#8220;Certify yourself&#8221; or &#8220;Sharpen your skills&#8221; sessions</span></span><b><span style="background: #ffff00"><span style="background-color:#f0fff0;">.</span></span></b></span><br /> &#160;</p> <p style="margin-bottom: 0cm"> <span style="font-size:14px;">&#8220;Are You Cognizant Ready&#8221; is an assessment of the skill and knowledge, covering all the 7 modules you learnt earlier namely,<span style="background-color:#f0fff0;"> </span><span style="color:#ff8c00;"><b><span style="background-color:#f0f8ff;">&#8220;Technology Fundamentals, Operating systems, Programming Fundamentals, Object oriented concepts, Ansi SQL, Software Engineering and Software Testing&#8221;</span></b></span></span> <br /> &#160;<br /> &#160;</p> <p style="margin-bottom: 0cm"> <span style="font-size:16px;">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; </span></p> <center> <span style="font-size:16px;"><strong>Please go through this blueprint before attempting this session:</strong></span><br /> &#160; <table cellpadding="0" cellspacing="0" class="table table-bordered" frame="ABOVE" rules="ROWS" style="width:498px" width="498"> <colgroup> <col width="148" /> <col width="92" /> <col width="83" /> <col width="175" /> </colgroup> <tbody> <tr> <td bgcolor="#1BBB9B" colspan="4" style="border: 1.00pt solid #00000a; padding: 0cm" width="498"> <p align="CENTER"> <br /> <span style="color:#000000;"><span style="font-size:16px;"><b>Are You Cognizant Ready &#8211; Blueprint</b></span></span></p> </td> </tr> <tr> <td colspan="4" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="498"> <p align="CENTER"> &#160;</p> </td> </tr> <tr> <td bgcolor="#f2f2f2" colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="240"> <p style="text-align: center;"> <br /> <b>Duration of each attempt</b></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="258"> <p style="text-align: center;"> <br /> 1.5 hours</p> </td> </tr> <tr> <td bgcolor="#f2f2f2" colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="240"> <p style="text-align: center;"> <br /> <b>Maximum score</b></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="258"> <p style="text-align: center;"> <br /> 100 marks</p> </td> </tr><tr> <td bgcolor="#f2f2f2" colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="240"> <p style="text-align: center;"> <br /> <b>Number of attempts allowed</b></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="258"> <p style="text-align: center;"> <br /> 3 (no additional attempts)</p> </td> </tr> <tr> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="240"> <p> &#160;</p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="258"> <p> &#160;</p> </td> </tr> <tr> <td colspan="4" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="498"> <p align="CENTER"> <br /> <strong><span style="color:#ff8c00;">Each attempt will have 2 parts &#8211; Knowledge &#38; Skill</span></strong></p> </td> </tr> <tr> <td colspan="4" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="498"> <p> &#160;</p> </td> </tr> <tr> <td bgcolor="#1BBB9B" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="148"> <p align="CENTER"> &#160;</p> </td> <td bgcolor="#1BBB9B" colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> <b><span style="color:#000000;">Knowledge</span></b></p> </td> <td bgcolor="#1BBB9B" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> <b><span style="color:#000000;">Skill</span></b></p> </td> </tr> <tr> <td bgcolor="#f2f2f2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="148"> <p align="CENTER"> <br /> <strong><i>Weightage</i></strong></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> 60%</p> </td> <td style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> 40%</p> </td> </tr> <tr> <td bgcolor="#f2f2f2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="148"> <p align="CENTER"> <br /> <i><b>Type of questions</b></i></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> Multiple Choice Questions</p> </td> <td style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> Hands-on</p> </td> </tr> <tr> <td bgcolor="#f2f2f2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="148"> <p align="CENTER"> <br /> <i><b>Number of questions</b></i></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> 30</p> </td> <td style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> 3 (2 in C, 1 in SQL)</p> </td> </tr> <tr> <td bgcolor="#f2f2f2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="148"> <p align="CENTER"> <br /> <i><b>Passing Criteria</b></i></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> 80%</p> </td> <td style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> 100%</p> </td> </tr> <tr> <td bgcolor="#f2f2f2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="148"> <p align="CENTER"> <br /> <i><b>Syllabus</b></i></p> </td> <td colspan="2" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> Theory from all 7 courses learnt so far</p> </td> <td style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: none; border-right: 1.00pt solid #00000a; padding: 0cm" width="175"> <p align="CENTER"> <br /> Programming Fundamentals &#38; ANSI SQL</p> </td> </tr> <tr> <td colspan="4" style="border-top: none; border-bottom: 1.00pt solid #00000a; border-left: 1.00pt solid #00000a; border-right: 1.00pt solid #00000a; padding: 0cm" width="498"> <p> &#160;</p> </td> </tr> </tbody> </table> </center> <p style="margin-bottom: 0cm"> &#160;</p> <p style="margin-bottom: 0cm"> <span style="color:#0000ff;"><u><b>NOTE: </b></u></span></p> <ol> <li> <p style="margin-bottom: 0cm; line-height: 100%"> <strong><font face="Calibri, serif">If you click on the &#8220;Launch&#8221; button, it will be counted as an attempt! We will not encourage any requests for additional attempts.</font></strong></p> </li> <li> <p style="margin-bottom: 0cm; line-height: 100%"> <strong><font face="Calibri, serif">You cannot pause the test clock once you have attempted. So please ensure that you are available and online for 1.5 hours to take this test.</font></strong></p> </li> <li> <p style="margin-bottom: 0cm; line-height: 100%"> <strong><font face="Calibri, serif">Please do not open multiple tabs, as this will affect your test score.</font></strong></p> </li> <li> <p style="margin-bottom: 0cm; line-height: 100%"> <strong><font face="Calibri, serif">The test will automatically close after 1.5 hours, so please save and submit your answers regularly.</font></strong></p> </li> <li> <p style="margin-bottom: 0cm; line-height: 100%"> <strong><font face="Calibri, serif">You can enroll / cancel any assessments, 3hrs before the assessment start time.</font></strong></p> </li> </ol> <p style="margin-bottom: 0cm"> &#160;</p> <p style="margin-bottom: 0cm"> <br /> &#160;</p> <center> <p style="margin-bottom: 0.35cm"> <span style="font-size:18px;"><u><b>Certification time table</b></u></span></p> <p style="margin-bottom: 0.35cm"> <span style="color:#008000;"><span style="font-size:16px;"><span style="background: #ffff00"><span style="background-color:#ffffff;">&#8220;</span><b><span style="background-color:#ffffff;">Are You Cognizant Ready&#8221; is currently scheduled on the below mentioned date and time, for the month of May and June. You can opt a suitable date for your attempt, based on your preparation level.</span></b></span></span></span></p><p style="margin-bottom: 0.35cm;color:#008000;font-size:16px;#ffff00"><b>Further attempts will be scheduled in the upcoming months as we go forward.</b><br /> &#160;</p> <table border="1" cellpadding="1" cellspacing="1" style="width: 400px;"> <tr> <th>Date</th> <th>Start time</th> <th>End Time</th> </tr> <tr> <td>28th May 2015</td> <td>4.00 PM</td> <td>5.30 PM</td> </tr> <tr> <td>11th June 2015</td> <td>4.00 PM</td> <td>5.30 PM</td> </tr> <tr> <td>25th June 2015</td> <td>4.00 PM</td> <td>5.30 PM</td> </tr> </table> <p style="margin-bottom: 0cm; line-height: 100%; text-align: center;"> &#160;</p> </center> </div> </div> </div> </div> <div class="modal " id="navDialog" tabindex="-1" aria-hidden="false" style="display: none;"> <div class="modal-dialog" style="min-width: 800px;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> ×</button> </div> <div class="modal-body" style="overflow:auto"> <embed src="../../player/flowplayer-3.0.3.swf" wmode="transparent" width="700" height="450" allowfullscreen="true" allowscriptaccess="always" quality="high" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" id="player_api" bgcolor="#000000" name="player_api" flashvars="config={'playerId':'player','clip':{'url':'http://cognizant.e-box.co.in/uploads/basicNavigationAndTicketNew.flv'},'playlist':[{'url':'http://cognizant.e-box.co.in/uploads/basicNavigationAndTicketNew.flv'}]}"/> </div> <div class="modal-footer "> <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button> </div> </div> </div></div> <div class="modal " id="programmingdemodialog" tabindex="-1" aria-hidden="false" style="display: none;"> <div class="modal-dialog" style="min-width: 800px;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> ×</button> </div> <div class="modal-body" style="overflow:auto"> <embed src="../../player/flowplayer-3.0.3.swf" wmode="transparent" width="700" height="450" allowfullscreen="true" allowscriptaccess="always" quality="high" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" id="player_api" bgcolor="#000000" name="player_api" flashvars="config={'playerId':'player','clip':{'url':'http://cognizant.e-box.co.in/uploads/demo-video-contest.flv'},'playlist':[{'url':'http://cognizant.e-box.co.in/uploads/demo-video-contest.flv'}]}"/> </div> <div class="modal-footer "> <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button> </div> </div> </div></div> <div class="modal " id="userRoadMapCalendarModal" tabindex="-1" aria-hidden="false" style="display: none;"> <div class="modal-dialog" style="min-width: 800px;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> ×</button> <b class="modal-title" style="font-size: x-large">My Roadmap Calendar</b> </div> <div class="modal-body" style="overflow:auto"> <div id="userRoadMapCalendar"> </div> </div> <div class="modal-footer "> <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button> </div> </div> </div> </div>
+                                
+                            </td>
+                        
+                    </tr>
+                </table>
+            
+            
+            
+           <div class="modal fade" id="amphiCommentDialog" tabindex="-1">
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Comments</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+                <div id="amphiCommentDiv"></div>
+            
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+
+            
+           <div class="modal fade" id="amphiShareDialog" tabindex="-1">
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Shares</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+                <div id="amphiShareDiv"></div>
+            
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+            
+            
+           <div class="modal fade" id="attemptError" tabindex="-1">
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Prerequisites Not Completed</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+                <div id="attemptErrorDiv">
+                    
+                    <div>
+                        Assessment is not enabled, Due to Prerequisites.
+                    </div>
+                </div>
+            
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+            
+            
+           <div class="modal fade" id="finalAssessmentMilestoneDialog" tabindex="-1">
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Get Certified</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+                <h5>Please Complete All the Milestones to take Final Assessment :)</h5>
+            
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+            
+            
+           <div class="modal fade" id="finalAssessmentCanAttemptDialog" tabindex="-1">
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Get Certified</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+                <h5>Please Complete All the Milestones to take Final Assessment :)</h5>
+            
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+            
+            <script type="text/javascript" src="/static/js/morris.js"></script>
+            <script type="text/javascript" src="/static/js/raphael/raphael-min.js"></script>
+
+            <script>                
+                $(document).ready(function() {
+                    jQuery('.tabs .tab-links a').on('click', function(e)  {
+                        var currentAttrValue = jQuery(this).attr('href');
+                        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+                        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+                        e.preventDefault();
+                    });
+                    
+                });               
+            </script>
+            
+            
+            
+            
+        
+        
+        <script>
+            $(document).ready(function(){
+                $("#coursetabsbody").css("min-height",$(window).height()-85)
+            });
+            
+        </script>
+          
+  </div>
+  
+    
+           <div class="modal fade" id="calandarDialog" tabindex="-1">
+                <div class="modal-dialog" style='width:800px;'>
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Calendar</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+	No Content
+    
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+  
+           <div class="modal fade" id="amphiNotificationDialog" tabindex="-1">
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Notification</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+	<div id="amphiNotificationDiv"></div>
+  
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+  
+ 
+           <div class="modal fade" id="slotDialog" tabindex="-1">
+                <div class="modal-dialog" style='width:70%'>
+                  <div class="modal-content">
+                  
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Enrolment Schedule</h4>
+                    </div>
+                
+                    <div class="modal-body" style="overflow:auto">
+                        
+                <div id="mileStoneSessionsDiv"></div>
+ 
+                    </div>
+            
+                        <div class="modal-footer ">
+                
+                          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                
+                        </div>
+                    
+                  </div>
+                </div>
+            </div> 
+        
+ 
+ <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 " style="position: fixed;top: 393px;">
+<input type="hidden" name="enableP2PChat" value="false" id="enableP2PChat" />
+<input type="hidden" name="P2PChatInterval" value="300000" id="P2PChatInterval" />
+ 
+
+
+
+
+<script type="text/javascript" src="/static/js/chat.js"></script>
+<script type="text/javascript" src="/static/js/simplewebrtc.bundle.js"></script>        
+<style>
+        .chat_window {
+          position: absolute;
+          width: calc(100% - 20px);
+          max-width: 800px;
+          height: 500px;
+          border-radius: 10px;
+          background-color: #fff;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+          background-color: #f8f8f8;
+          overflow: hidden;
+        }
+
+        .top_menu {
+          background-color: #fff;
+          width: 100%;
+          padding: 20px 0 15px;
+          box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        }
+        .top_menu .buttons {
+          margin: 3px 0 0 20px;
+          position: absolute;
+        }
+        .top_menu .buttons .button {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 10px;
+          position: relative;
+          cursor:pointer;
+        }
+        .top_menu .buttons .button.close {
+          background-color: #f5886e;
+        }
+        .top_menu .buttons .button.minimize {
+          background-color: #fdbf68;
+        }
+        .top_menu .buttons .button.maximize {
+          background-color: #a3d063;
+        }
+        .top_menu .title {
+          text-align: center;
+          color: #bcbdc0;
+          font-size: 20px;
+        }
+
+        .amphi_messages {
+          position: relative;
+          list-style: none;
+          padding: 20px 10px 0 10px;
+          margin: 0;
+          height: 347px;
+          overflow: auto;
+        }
+        .amphi_messages .amphi_message {
+          clear: both;
+          overflow: hidden;
+          margin-bottom: 20px;
+          transition: all 0.5s linear;
+          opacity: 0;
+        }
+        .amphi_messages .amphi_message.left .avatar {
+          background-color: #f5886e;
+          float: left;
+        }
+        .amphi_messages .amphi_message.left .text_wrapper {
+          background-color: #ffe6cb;
+          margin-left: 20px;
+        }
+        .amphi_messages .amphi_message.left .text_wrapper::after, .amphi_messages .amphi_message.left .text_wrapper::before {
+          right: 100%;
+          border-right-color: #ffe6cb;
+        }
+        .amphi_messages .amphi_message.left .text {
+          color: #c48843;
+        }
+        .amphi_messages .amphi_message.right .avatar {
+          background-color: #fdbf68;
+          float: right;
+        }
+        .amphi_messages .amphi_message.right .text_wrapper {
+          background-color: #c7eafc;
+          margin-right: 20px;
+          float: right;
+        }
+        .amphi_messages .amphi_message.right .text_wrapper::after, .amphi_messages .amphi_message.right .text_wrapper::before {
+          left: 100%;
+          border-left-color: #c7eafc;
+        }
+        .amphi_messages .amphi_message.right .text {
+          color: #45829b;
+        }
+        .amphi_messages .amphi_message.appeared {
+          opacity: 1;
+        }
+        .amphi_messages .amphi_message .avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .amphi_messages .amphi_message .text_wrapper {
+          display: inline-block;
+          padding: 20px;
+          border-radius: 6px;
+          width: calc(100% - 85px);
+          min-width: 100px;
+          position: relative;
+        }
+        .amphi_messages .amphi_message .text_wrapper::after, .amphi_messages .amphi_message .text_wrapper:before {
+          top: 18px;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+        }
+        .amphi_messages .amphi_message .text_wrapper::after {
+          border-width: 13px;
+          margin-top: 0px;
+        }
+        .amphi_messages .amphi_message .text_wrapper::before {
+          border-width: 15px;
+          margin-top: -2px;
+        }
+        .amphi_messages .amphi_message .text_wrapper .text {
+          font-size: 13px;
+          font-weight: 100;
+        }
+
+        .bottom_wrapper {
+          position: relative;
+          width: 100%;
+          background-color: #fff !important;
+          padding: 20px 20px;
+          position: absolute;
+          bottom: 0;
+        }
+        .bottom_wrapper .message_input_wrapper {
+          display: inline-block;
+          height: 50px;
+          border-radius: 25px;
+          border: 1px solid #bcbdc0;
+          width: calc(100% - 160px);
+          position: relative;
+          padding: 0 20px;
+        }
+        .bottom_wrapper .message_input_wrapper .message_input {
+          border: none;
+          height: 100%;
+          box-sizing: border-box;
+          width: calc(100% - 40px);
+          position: absolute;
+          outline-width: 0;
+          color: gray;
+        }
+        .bottom_wrapper .send_message,.accept_call,.reject_call{
+          width: 140px;
+          height: 50px;
+          display: inline-block;
+          border-radius: 50px;
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.2s linear;
+          text-align: center;
+        }
+        .accept_call{
+          background-color: #a3d063;
+          border: 2px solid #a3d063; 
+        }
+        .send_message{
+          background-color: #49AFD1;
+          border: 2px solid #49AFD1;
+        }
+        .bottom_wrapper .send_message{
+            float:right;
+        }
+        .reject_call{
+            background:red;
+            border: 2px solid red;
+        }
+        .bottom_wrapper,.accept_call:hover {
+          color: #a3d063;
+          background: none;
+        }
+        .reject_call:hover{
+          color:red;
+          background:none;
+        }
+        .send_message:hover{
+          color:#49AFD1;
+          background:none;
+        }
+        .bottom_wrapper .send_message .text,.accept_call .text,.reject_call .text {
+          font-size: 13px;
+          font-weight: 100;
+          display: inline-block;
+          line-height: 48px;
+        }
+
+        .message_template {
+          display: none;
+        }
+        .text{
+            word-wrap: break-word;
+        }
+        #incoming_call{
+            padding:100px 50px;
+            background:#F8F8F8;
+        }
+    </style>
+
+
+
+<input type="hidden" name="logMesUrl" value="/userBatch/logMsg" id="logMesUrl" />
+<input type="hidden" name="fromId" value="" id="fromId" />
+<input type="hidden" name="toId" value="75471" id="toId" />
+<input type="hidden" name="logType" value="PUBLIC" id="logType" />
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 chat-box hidden">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="chat_window">
+            <div class="top_menu">
+                <div class="buttons">
+                    <div class="button close"></div>
+                    <div class="button minimize"></div>
+                    <!--<div class="button maximize"></div>-->
+                </div>
+                <div class="title">Peer to Peer Chat</div>
+            </div>
+            <ul class="amphi_messages"></ul>
+            <div id="incoming_call" class="hidden">
+                <center>
+                        <div id="caller"></div>
+                        <div class="reject_call" onclick="declineChatCall($('#fromId').val(),75471)">
+                            <div class="icon"></div>
+                            <div class="text">Reject</div>
+                        </div>
+                        <div class="accept_call" onclick="acceptChatCall()">
+                            <div class="icon"></div>
+                            <div class="text">Accept</div>
+                        </div>
+                </center>
+            </div>
+<!--            <div class="bottom_wrapper clearfix">
+                <div class="message_input_wrapper">
+                    <input class="message_input" id="message_input" placeholder="Type your amphi_message here..." />
+                </div>
+                <div class="send_message" id="send_message">
+                    <div class="icon"></div>
+                    <div class="text">Send</div>
+                </div>
+            </div>-->
+        </div>
+        <div class="message_template">
+            <li class="amphi_message">
+                <div class="avatar"></div>
+                <div class="text_wrapper">
+                    <div class="text"></div>
+                </div>
+            </li>
+        </div>
+        <script language="javascript" type="text/javascript">
+           $(document).ready(function() {
+               pollingForPeerToPeerChatFromParticipant(75471);
+           });
+           
+           
+           function startChat(meetingCode) {
+                $.ajax({
+                url: "https://service.xirsys.com/ice",
+                data: {
+                    ident: "thana",
+                    secret: "5827e118-0b89-11e6-8c8c-b18ed17dcab4",
+                    domain: "cognizant.e-box.co.in",
+                    application: "default",
+                    room: "default",
+                    secure: 1
+                },
+                success: function (data, status) {
+                    peerConnectionConfig = data.d;
+                    joinRoom(meetingCode,'Saikumar  Surisetty',true,false,false,'');
+                }
+            });
+            
+            
+        }
+        </script>
+    </div>
+</div>
+
+ </div>
+    
+  <div id="footer" style="display:none"class="amphi_cap_footer">
+        
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <span style="float:left;white-space: nowrap">      
+      
+        
+      
+      <a href="http://www.cognizant.com" target="_blank">Cognizant Technology Solutions</a>
+    </span>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">      
+    <span style="float:right;white-space: nowrap">
+      Powered by E-Box
+<script>
+var allIntakeDetailLoaded = false;
+</script>
+    </span>
+  </div>
+</div>
+<!-- test-->
+
+                
+  </div>
+  <div id="sideBarContents" class="box" style="display:none;z-index: 1000;position: absolute;top:-200px;">
+         
+                                
+    
+
+                       
+                              
+  </div>
+
+
+
+
+    
+    
+    <div class="modal fade" id="processDialog" role="dialog" data-backdrop="static">
+      <div class="modal-dialog processingDialog">  
+        <div class="modal-content">         
+          <div class="modal-body">        
+            <div class="imageLoading" style="float:left"></div>
+              <div style="float:left;padding-top:16px;padding-left:10px;font-size:14px;color:#00698D;">Please wait, your request is being processed... Thank You.</div>
+              <div style="clear:both"></div>
+            </div>            
+        </div>
+      </div>
+    </div>
+
+ <div></div>
+ <div class="modal fade" id="processDialogMute" role="dialog" data-backdrop="static">
+  <div class="modal-dialog processingDialog">  
+    <div class="modal-content" style="display: none;">            
+    </div>
+  </div>
+</div>
+
+ <div class="modal fade" id="errorDialog" tabindex="-1" role="dialog" data-backdrop="static">
+  <div class="modal-dialog processingDialog">  
+    <div class="modal-content">         
+      <div class="modal-body">        
+        <div class="imageLoading" style="float:left"></div>
+          <a class="pull-right" onclick="hideWait()" style="font-weight: bold;font-size: 14px;margin-right: 10px;color: #000;cursor: pointer;text-decoration: none">X</a>
+          <div style="float:left;padding-top:16px;padding-left:10px" id = "errorDialogContent"></div>
+          <div style="clear:both"></div>
+        </div>            
+    </div>
+  </div>
+</div>
+ 
+ 
+  <div class="modal fade" id="amphimessageDialog" role="dialog" data-backdrop="static">
+  <div class="modal-dialog">  
+    <div class="modal-content">   
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Message</h4>
+        </div>
+      <div class="modal-body">        
+          <div id="amphimessageDialogContent"></div>
+        </div>   
+        <div class="modal-footer ">            
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>         
+    </div>
+  </div>
+</div>
+ 
+  <div class="modal fade" id="amphiConfirmDialogModal" role="dialog" data-backdrop="static">
+  <div class="modal-dialog">  
+    <div class="modal-content">   
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" >Are you Sure?</h4>
+        </div>
+      <div class="modal-body">        
+          <div id="amphiConfirmDialogDiv" style="font-size: 16px;"></div>
+        </div>   
+        <div class="modal-footer chuz-modal-process-dialog">            
+           <button type="button" class="btn btn-danger btn-style-1" data-dismiss="modal">Cancel</button>
+           <button type="button" id="amphiConfirmDialogYes" class="btn btn-success btn-style-2" onclick="amphiConfirmStatus = true;" data-dismiss="modal">Ok</button>
+         </div>         
+    </div>
+  </div>
+</div>
+<script src="/static/bundle-ui_defer.js" type="text/javascript" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<script>
+function changeTheme(theme){
+      $.ajax({
+            url:'/user/setTheme',
+            success:function(){
+              window.location.reload(false);
+            },
+            data: {
+                  "theme":theme
+            },
+            type:'post'
+      });
+}
+$(document).ready(function(){
+  $("#footer").show();
+  $("#content").css({'padding-top':5});
+});
+  </script>
+  
+  
+    
+    
+    <input type="hidden" name="amphiSearchboxIgnoreDefaultWords" value="" id="amphiSearchboxIgnoreDefaultWords" />
+    <script>
+        var expireTimeOutInterval
+        $(".popup-modal").mouseover(function(){
+            clearInterval(expireTimeOutInterval)
+        });
+        $(".popup-modal").mouseout(function(){
+            startTokenTimeoutInterval()
+        });
+    </script>   
+    
+        <script>
+         var time = 5*60*1000;
+         var showOfflineNotification = true;
+         userOnlineFn('/user/online','https://cognizant.e-box.co.in/user/logout',time);
+        </script>  
+    
+</body>
+</html>
+
+              
+  
