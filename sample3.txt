@@ -1,0 +1,3 @@
+create database db;
+use db;
+craete table pavan(name,id,mail,phno);
