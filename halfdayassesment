@@ -1,0 +1,22 @@
+JAVA Half Day Assessment
+
+MULTILEVEL APPROVAL for Maternity Leave:
+The current implementation of the “Leave Management System” supports only one leave type: “Earned Leave”. We are going to support one more leave type: “Maternity Leave (ML)”.
+If your leave type is ML – need approval from your Manager and HR Manager.
+First level of approval goes to Manager and the Second level of approval goes to HR manger.
+
+Needs to change the database design, Java logic and CLI.
+Do the following changes in your project:- 
+Employee and LeaveDetails table:
+-	Add designation column in Employees table which contains Executive, Manager, 
+HR Manager, CEO etc.
+-	Add Maternity_Leave_status column in LeaveDetails table [PENDING/APPROVED/DENIED].
+CLI changes:
+-	Add option for HR Approval which has listing all pending ML status to approve or deny the request
+Validation:
+-	Only HR manager can approve all employee’s maternity leave except CEO.
+-	HR manager can do only the second level of approval.
+
+Note:
+-	Applying / Approving maternity leave for HR manager and CEO is out of scope.	
+
